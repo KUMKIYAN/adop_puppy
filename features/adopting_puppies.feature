@@ -13,19 +13,12 @@ Background:
 Scenario Outline: Adopt a single puppy
 
 When I press the View Details button for "Brook"
-
     And I press the Adopt Me button
-
     And I press the Complete the Adoption button
-
     And I enter "<name>" in the name field
-
     And I enter "<address>" in the address field
-
     And I enter "<Email1>" in the email field
-
     And I select "<pay_type>" from the pay type dropdown
-
     And I press the Place Order button
 
 Then I should see "Thank you for adopting a puppy!"
@@ -35,9 +28,7 @@ Examples:
 |name 	|	address		|	Email1			|	pay_type|
 
 |Cheezy	|123 Main Street|cheezy@example.com	|Credit card|
-
 |Chaazy	|234 Main Street|cheezy@example.com	|Check		|
-
 |Choozy	|345 Main Street|cheezy@example.com	|Credit card|
 
 
